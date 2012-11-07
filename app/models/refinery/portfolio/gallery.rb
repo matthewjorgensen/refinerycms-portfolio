@@ -16,7 +16,7 @@ module Refinery
 
       attr_accessible   :title, :body, :lft, :rgt,
                         :position, :gallery_type, :depth,
-                        :parent_id, :locale
+                        :parent_id, :locale, :teaser
 
       alias_attribute :description, :body
 

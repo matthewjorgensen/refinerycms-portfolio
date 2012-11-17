@@ -8,6 +8,7 @@
 	<%- end -%>
 	<div class="detail-wrap">
 		<div class="details">
+			<% @portfolio_info do |gallery| %>
 			<h2><%= gallery.title %></h2>
 			<%= raw gallery.description %>
 		</div>

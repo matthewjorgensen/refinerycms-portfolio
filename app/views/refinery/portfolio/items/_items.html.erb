@@ -8,9 +8,8 @@
 	<%- end -%>
 	<div class="detail-wrap">
 		<div class="details">
-			<% @portfolio_info do |gallery| %>
-			<h2><%= gallery.title %></h2>
-			<%= raw gallery.description %>
+			<h2><%= Refinery::Portfolio::Gallery.title %></h2>
+			<%= raw Refinery::Portfolio::Gallery.description %>
 		</div>
 	</div>
 </div>
@@ -19,7 +18,7 @@
 		<a href="#" class="icon-thumbs" title="View Info">View thumbnails</a>
 	</li>
 	<li class="project-title">
-		<h6><%= gallery.title %></h6>
+		<h6><%= Refinery::Portfolio::Gallery.title %></h6>
 	</li>
 	<li class="info">
 		<a href="#" class="icon-info" title="View Project Info">View project info</a>

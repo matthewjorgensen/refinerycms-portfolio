@@ -1,26 +1,7 @@
 <%- if items.present? -%>
-<div class="carousel-wrap">
-	<div class='carousel slide' id='gallery_images'>
-	  <ul class="carousel-inner unstyled">
-	    <%= render items %>
-	  </ul>
-	</div>
-	<div class="detail-wrap">
-		<div class="details">
-			<h2>gallery.title</h2>
-			raw gallery.description
-		</div>
-	</div>
-</div>
+  <div class='slideshow box_skitter box_skitter_large' id='gallery_images'>
+    <ul>
+      <%= render items %>
+    </ul>
+  </div>
 <%- end -%>
-<ul class="unstyled">
-	<li class="thumbnails">
-		<a href="#" class="icon-thumbs" title="View Info">View thumbnails</a>
-	</li>
-	<li class="project-title">
-		<h6>title</h6>
-	</li>
-	<li class="info">
-		<a href="#" class="icon-info" title="View Project Info">View project info</a>
-	</li>
-</ul>

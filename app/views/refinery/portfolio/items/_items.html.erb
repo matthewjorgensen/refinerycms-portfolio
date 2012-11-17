@@ -1,11 +1,10 @@
+<%- if items.present? -%>
 <div class="carousel-wrap">
-	<%- if items.present? -%>
 	<div class='carousel slide' id='gallery_images'>
 	  <ul class="carousel-inner unstyled">
 	    <%= render items %>
 	  </ul>
 	</div>
-	<%- end -%>
 	<div class="detail-wrap">
 		<div class="details">
 			<h2>gallery.title</h2>
@@ -13,6 +12,7 @@
 		</div>
 	</div>
 </div>
+<%- end -%>
 <ul class="unstyled">
 	<li class="thumbnails">
 		<a href="#" class="icon-thumbs" title="View Info">View thumbnails</a>

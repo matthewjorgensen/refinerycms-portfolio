@@ -8,9 +8,7 @@
 	<div class="detail-wrap">
 		<div class="details">
 			<h2>gallery.title</h2>
-			<% if ::Refinery::Portfolio.display_gallery_text %>
-			          <%= raw gallery.description %>
-			        <% end %>
+			raw gallery.description
 		</div>
 	</div>
 </div>

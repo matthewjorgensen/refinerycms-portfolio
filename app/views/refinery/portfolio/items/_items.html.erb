@@ -7,8 +7,12 @@
 	</div>
 	<div class="detail-wrap">
 		<div class="details">
-			<h2>gallery.title</h2>
-			raw gallery.description
+		<% @find_portfolios.each do |gallery| %>
+			<% if gallery_id == item.gallery_id %>
+			<h2><%= gallery.title %></h2>
+			<%= raw gallery.description %>
+			<% end %>
+		<% end %>	
 		</div>
 	</div>
 </div>

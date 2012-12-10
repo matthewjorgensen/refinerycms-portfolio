@@ -9,15 +9,7 @@
 		<div class="details">
 			<h2>gallery.title</h2>
 			raw gallery.description 
-			<!-- <div><%= raw items %></div> -->
-			<ul class="unstyled projects clearfix">
-				<% @projects.each do |gallery| %>
-				<li id="<%= dom_id(gallery) %>" class="project span4">				 
-			        <p><%= raw gallery.teaser %></p>
-				</li>
-				<% end %>
-			 </ul>
-			
+			<div><%= raw items %></div>
 		</div>
 	</div>
 </div>

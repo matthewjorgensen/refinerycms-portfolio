@@ -8,7 +8,7 @@ module Refinery
         attr_accessible :locale
       end
 
-      attr_accessible :title, :caption, :image_id, :gallery_id, :position
+      attr_accessible :title, :caption, :image_id, :gallery_id, :position, :gallery_description
       validates :gallery_id, :numericality => {:allow_nil => true}
       validates :image_id, :presence => true, :numericality => true
 

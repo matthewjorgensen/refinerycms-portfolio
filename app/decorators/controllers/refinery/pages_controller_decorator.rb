@@ -1,8 +1,8 @@
 Refinery::PagesController.class_eval do
     # your controller logic goes here
-    before_filter :find_portfolio
+    before_filter :find_projects
         protected
-          def find_featured_portfolio
-            @featured_portfolios = Refinery::Portfolio::Gallery.find(:all)
+          def find_projects
+            @projects = Refinery::Portfolio::Gallery.find(:all)
           end
   end
